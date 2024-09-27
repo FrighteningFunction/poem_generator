@@ -11,7 +11,7 @@ import random
 # models = ["gpt-4o-mini", "gpt-4o"]
 temperatures = [0.7, 0.8, 1.0]  # Vary temperature for creativity
 daily_limit = 150  # Limit the number of poems generated per day
-requests_per_minute = 10  # Limit the number of requests per minute
+requests_per_minute = 15  # Limit the number of requests per minute
 
 # Lists for genres, styles, and formats
 genres = [
@@ -112,7 +112,7 @@ def generate_custom_poems(chosenmodel, num_poems, api_call):
             generate_poem_and_log(chosenmodel, api_call)
         # Wait before generating the next batch
         print(f"Waiting 60 sec to respect the API rate limit...")
-        # time.sleep(60)  # Respecting the rate limit
+        time.sleep(55)  # Respecting the rate limit
 
     # Generate the remaining poems (if any)
     if remaining_poems > 0:
@@ -124,4 +124,4 @@ def generate_custom_poems(chosenmodel, num_poems, api_call):
 
 if __name__ == "__main__":
     # Example usage:
-    generate_custom_poems("meta-llama-3.1-405b-instruct", 80, meta_api_call)  # Customize the number of poems you want to generate
+    generate_custom_poems("gpt-4o-mini", 80, openai_api_call)  # Customize the number of poems you want to generate

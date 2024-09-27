@@ -3,7 +3,10 @@ from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 
+# For some microsoft models, you can use this interface, too.
+
 # models: "meta-llama-3-8b-instruct", "meta-llama-3.1-405b-instruct"
+# models from microft: "Phi-3-small-128k-instruct", "Phi-3.5-mini-instruct"
 
 endpoint = "https://models.inference.ai.azure.com"
 token = os.environ["GITHUB_TOKEN"]
