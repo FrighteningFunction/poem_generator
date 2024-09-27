@@ -1666,31 +1666,6 @@ I find a solace, that doth never stray
 In twilight's hollow, where shadows dance and play
 
 The wind doth whisper secrets of the night's decay","meta-llama-3.1-405b-instruct","0.7","gothic","rondeau","formal","2024-09-27 14:05:35"
-"Elder grove,
-
-Whispers, veils, night's cloak.
-
-Enigma, secrets dwell,
-
-In cobwebbed corners of time.
-
-Hungry ghosts	UPROPERTY
-                        
-                        
-                    
-                    
-                    .flink_CONTINUOUSRequestBody pdu = new.flink AVAILABLE_BUFFERED_MESSAGE_PDU();
-                     pdu.writeByteArray(0, bufferSize); pdu.flush();
-                     PrimitiveArray.writeDouble (pdu.getData(1), offset, markerPosition);
-                     logInfo(""Created uma update (marker position: "" + markerPosition + "")"");
-                     String updateMarkerToString = ByteUtil.prettyPrint(pdu.getData(3));
-                     logger.info(""Updating user with marker "" + updateMarkerToString);
-                     return updateMarkerToString;
-
-
-
-
-How do we handle non-English character encoding when using pdus with user data, especially in a Kafka deployment that spans multiple clusters with different locales?","Phi-3-small-128k-instruct","1.0","magical realism","cinquain","gothic","2024-09-27 14:53:29"
 "Skeletons dance beneath the moon,
 
 Laughter echoes with each croon.
@@ -8270,3 +8245,471 @@ In fractured earth, the die is cast,
 In silence lingers ash and bone,  
 A legacy, though shattered, grown.  
 In night’s embrace, our lives enfold.","gpt-4o-mini","1.0","post-apocalyptic","rondeau","realist","2024-09-27 15:34:35"
+"Moonlit wings unfold 
+Dragon's scales shimmer mist 
+Mythic forest hush","meta-llama-3.1-405b-instruct","0.8","fantasy","dodoitsu","imagist","2024-09-27 12:46:54"
+"Cosmic winds I ride
+Astral waves beneath my soul
+Mystery my shore","meta-llama-3.1-405b-instruct","0.8","adventure","senryu","metaphysical","2024-09-27 12:48:43"
+"In dark of night where shadows danced and played
+Amidst the trees a silent figure swayed
+The wind it howled like mournful lover's sigh
+As if it too felt anguish and despair's dark eye
+
+Her heart aflame with passions unspoken
+She searched for answers to the questions unbroken
+That plagued her soul and troubled her mind's eye
+And in the darkness she felt his presence nigh
+
+A stranger's hand reached out and touched her skin
+A spark of fire that sent her heart within
+Racing with fear and anticipation's thrill
+She felt the night air charged with secrets unfulfilled
+
+His eyes aglow like lanterns in the night
+ Reflected the fierce passion of his heart's delight
+A love so strong it conquered fear's dark might
+And in its place a burning flame took flight
+
+Yet danger lurked in shadows dark and deep
+A threat to love and life's fragile mystic sleep
+For in the night a killer stalked his prey
+And in the darkness love and death did sway","meta-llama-3.1-405b-instruct","0.8","thriller","blank verse","romanticist","2024-09-27 12:52:44"
+"In twilight's hush where shadows dance and play
+A midnight caller comes with secrets cold
+And whispers truths that chill the heart of day
+
+The wind doth howl like a mournful sigh
+As I, a detective, heed the call
+And follow clues that lead to mystery's high
+
+Through alleys dark and streets of old
+I track the footsteps of a phantom pale
+And listen for the whispers yet untold
+
+The moon above, a ghostly galleon, sails
+And casts a silver glow on turrets grey
+And I, a seeker of the truth, prevail
+
+In darkest night, where terrors reign and sway
+I find the threads that weave a fatal spell
+And unravel mysteries of death's dark way
+
+And when the dawn breaks, and the shadows flee
+I see the truth, in all its ghastly hue
+And know the heart of darkness beats in me","meta-llama-3.1-405b-instruct","0.7","detective","terza rima","gothic","2024-09-27 12:54:07"
+"Crazy Carl wore roller skates to the mall
+he crashed into a kiosk and took a great fall
+his pants split wide open and his boxers were bright
+now everybody's laughing at his polka dot sight","meta-llama-3.1-405b-instruct","0.8","comedy","quatrain","beat","2024-09-27 12:54:13"
+"Politicians grew noses so long
+they tripped on their own faces
+their words tangled in a mess
+of contradictions and empty places
+truth was lost in the laughter","meta-llama-3.1-405b-instruct","0.8","magical realism","cinquain","satirical","2024-09-27 12:54:17"
+" fragmented whispers on worn papyrus
+
+dear persephone
+
+spring's warmth awakens 
+ the trees regain their vibrancy 
+ yet i remain 
+ in this desolate underworld 
+ a prisoner of hades' love
+
+in the darkness i weave 
+ a tapestry of memories 
+ our laughter echoes 
+ as we danced in the sunlight 
+ before the pomegranate's seeds 
+ bound me to this fate
+
+yours
+ persephone
+
+torn scraps of parchment
+
+my dearest demeter
+
+i am lost without you 
+ the earth withers and dies 
+ as i search for my daughter 
+ through the realms of the damned 
+ the rivers styx and acheron 
+ hold their secrets and their silence
+
+i will not rest 
+ until you are returned 
+ and the cycle of life 
+ is restored to the world
+
+your loving mother
+ demeter
+
+smudged ink on a shattered mirror
+
+oh hades
+
+your kingdom is one of dust 
+ and forgotten dreams 
+ yet with persephone by my side 
+ even the shadows are illuminated 
+ her radiance awakens 
+ the beauty of the underworld 
+ and for a moment 
+ i forget the weight of my crown
+
+yours eternally
+ hades
+
+faded petals on a forgotten grave
+
+dear hades
+
+i will return to the world above 
+ but for now 
+ let us cherish these moments 
+ in the secret gardens 
+ of the underworld 
+ where love and death entwine 
+ like the tender shoots of a vine
+
+yours
+ persephone","meta-llama-3.1-405b-instruct","0.7","mythological","visual poetry","epistolary","2024-09-27 12:55:13"
+"In the depths of a city where shadows writhe like living things
+A figure emerged from the smoke of a thousand midnights
+Her eyes burned with an otherworldly green fire
+As she moved through the crowds with a slow and sinuous desire
+
+Her name was whispered in fear and awe by those who saw her pass
+A melodic hiss that conjured images of dark and ancient glass
+Her presence stirred the wind which carried the scent of decay
+And those who felt her breath grew cold with a creeping dismay
+
+She walked through walls and doors as if they were not there
+A ghostly figure in a long and tattered coat with eyes that glared
+Like lanterns in a storm her gaze illuminated all
+The hidden terrors that crawled upon the walls
+
+Her path unwound like a serpent through the city's twisted heart
+Where darkness seethed and pulsed with a malevolent life to start
+The buildings loomed above her like specters of a forgotten past
+Their windows empty eyes that watched her with a cold and mirthless vast
+
+And when she finally vanished into the swirling mist and night
+The city breathed a sigh of relief and the shadows ceased their flight
+But those who saw her knew that she would return once more
+For in her wake she left a trail of madness and a hunger that would roar","meta-llama-3.1-405b-instruct","0.7","paranormal","narrative poem","expressionist","2024-09-27 12:56:55"
+"whispers in the dark confer with moon's pale glow
+shadows slip away like smoke on the wind's cold blow","meta-llama-3-8b-instruct","1.0","mysterious","couplet","beat","2024-09-27 13:04:03"
+"The world's charred bones scattered wide awake
+A mimic culture of dust and abandoned make","meta-llama-3-8b-instruct","1.0","post-apocalyptic","couplet","surrealist","2024-09-27 13:04:04"
+"In twilight's hush where shadows writhe
+Like living things that twist and turn
+A city's pulse begins its beat
+A staccato rhythm of desire and fear
+
+The night air trembles with each sigh
+As hearts bequeath their deepest regret
+In hollowed eyes the darkness lies
+A mirror to the soul's despair
+
+The city's streets a maze of pain
+A labyrinth where the lost remain
+Echoes of forgotten dreams
+Whispers of the heart's demise
+
+The humans swarm like torpid flies
+In search of meaning's fleeting sighs
+Their footsteps weave a desperate dance
+As they pursue the phantoms' trance
+
+In every face a story's told
+Of love and loss, of life grown old
+Their eyes a window to the soul
+A reflection of the heart's dark role","meta-llama-3-8b-instruct","1.0","drama","blank verse","avant-garde","2024-09-27 13:04:07"
+"In twilight's hush where shadows play
+Amidst the trees that whisper gray
+I chanced upon a maiden fair
+With tresses dark as raven's lair
+
+Her eyes like sapphires shone so bright
+Reflecting stars on a moonless night
+Her lips like rose petals soft and pale
+ Inviting whispers, secrets to hail
+
+She wandered lost, a wanderer alone
+A stranger in this mystic tone
+I drew beside her, hand in hand
+Together we embarked on a mystic land
+
+Through forests dark where ancient trees preside
+We wandered, hand in hand, side by side
+Their whispers secrets shared with us alone
+As moonbeams danced, our hearts made known
+
+A brook babbled secrets in the night
+As we sat down, our love took flight
+Our lips met in a tender kiss
+As the world around us slowly bliss
+
+The trees stood watch, their leaves a-glow
+The moon above, a silver glow
+The brook's soft voice, a lullaby sweet
+As our love swelled, our hearts to greet","meta-llama-3-8b-instruct","0.7","fantasy","narrative poem","romanticist","2024-09-27 13:04:10"
+"Moonlight whispers secrets dear
+In the silence, shadows appear
+The wind, a messenger of the night
+Carrying whispers to the heart's delight","meta-llama-3-8b-instruct","1.0","folklore","tetrastich","symbolist","2024-09-27 13:04:11"
+"Petrarch's heart doth sing and sway
+For Laura's smiles bring forth the day
+Her eyes, like sapphires shining bright
+Reflect his love, a wondrous light","meta-llama-3-8b-instruct","1.0","happy","clerihew","romanticist","2024-09-27 13:04:12"
+"In twilight's hush where shadows play
+Spirits congregate to sway
+Ethereal whispers fill the air
+As souls transcend the mortal lair","meta-llama-3-8b-instruct","1.0","paranormal","clerihew","transcendental","2024-09-27 13:04:13"
+"Murder in the morning dew
+A victim found with money few
+No motive, no suspect too
+The detective's work cut out for them anew
+
+ killed by chair and copy machine
+The office politics come to a scream
+In another cutthroat game
+Corporations get the blame
+
+law and order TV may depict
+ justice blind but mostly asleep
+Where corruption reigns supreme
+The guilty go home quiet and serene
+
+police on the take, it's old news
+Homeland injustice crushes muse
+The city's broken wheel grind
+Where wheels of justice malaligned","meta-llama-3-8b-instruct","1.0","crime","renga","satirical","2024-09-27 13:04:15"
+"Whispers of dawn rise
+Youth's fragile wings unfold slow
+Hope's first tender bloom
+In the garden of my soul
+Summer's warmth begins to glow","meta-llama-3-8b-instruct","0.7","coming-of-age","tanka","lyrical","2024-09-27 13:04:16"
+"The sun sets low upon the plain
+Where cowboys roam and outlaws reign
+The wind it howls like a mournful sigh
+As I ride forth to the town of by and by
+
+I'm searching for a mystery, a clue to a crime
+A tale of love and heartache, of a heart that's lost its prime
+I've heard of a maiden, fair and bright
+With hair as red as the desert's fiery light
+
+Her name is Emma, a beauty rare
+With a heart that's broken, and a soul that's aware
+Of the dangers that lurk in every place
+And the ghosts that haunt the dusty trails of time and space
+
+I find her in the saloon, where the outlaws play
+Her eyes meet mine, and I'm lost in their gaze, in disarray
+I approach her slowly, with a heart that's aglow
+And ask if she's the one, who's been with me, so long ago
+
+She looks at me, with a mixture of fear and shame
+And tells me her story, of a love that went up in flames
+Of a man who left her, without a word or a sigh
+And of the heartache, that she's been searching, to deny
+
+I take her hand, and lead her out into the night
+Under the stars, where the coyotes howl their delight
+We ride the range, where the cacti stand tall
+And I tell her my story, of a love that's yet to fall
+
+The wind it whispers secrets, in her ear so fine
+And she tells me of her dreams, of a love that's truly mine
+We ride on, through the darkness, with our hearts aglow
+And I know that I've found, the one, who's meant to be with me, so long ago.","meta-llama-3-8b-instruct","0.8","western","ballad","romanticist","2024-09-27 13:04:21"
+"In twilight's hush where shadows play
+Amidst the trees their vigil keep
+The wind whispers secrets of the day
+
+The stars appear like diamonds bright
+A celestial tapestry so fine
+As night's dark veil begins to lift and take flight
+
+The world is bathed in silver light
+The moon a glowing crescent shape
+The forest creatures stir and take flight
+
+In this still hour where darkness sleeps
+The trees their ancient wisdom keep
+Their leaves a rustling whisper make
+
+The night air vibrates with mystery
+The scent of blooming flowers and trees
+A symphony that's meant for me","meta-llama-3-8b-instruct","0.7","epic","terza rima","imagist","2024-09-27 13:04:24"
+"In streets of shadows where the night is deep
+The city whispers secrets to the wind
+A mystery unfolds, a tale to keep
+Of clues and truths that only few can find
+In streets of shadows where the night is deep
+
+The detective walks, a lone figure gray
+Following footsteps that lead him astray
+Through alleys dark, where neon lights decay
+He searches for the truth, come what may
+In streets of shadows where the night is deep
+
+A glimpse of beauty in a fleeting glance
+A whispered word that echoes without a dance
+A hidden truth that only he can enhance
+A mystery unfolds, a tale to keep
+In streets of shadows where the night is deep","meta-llama-3-8b-instruct","0.7","detective","rondeau","lyrical","2024-09-27 13:04:26"
+"whispers in the neon rain
+police sirens hanging like a sickle moon
+i'm a gumshoe in a city that howls at the walls
+where the rain pours down like a cayman's spite
+
+i've got a case that's gone cold as a corpse
+the city's got a wrapper on its eyes
+the streets are mean and the faces are meaner
+where the only truth is the one that gets you higher
+
+i walk the wet streets at three o'clock in the morning
+the only sound the soles of my shoes on the pavement's thinning
+a city that don't sleep's got a rhythm in its bones
+and i'm the only one who's trying to find the melody
+
+the bums are warming up their saxophones
+the sirens are rocking to the rhythm of the night
+i light a cigarette and breathe in the fumes
+and try to get my head around the crime scene's clues
+
+a girl with cornflower eyes and a heart of chrome
+left a trail of tears and cigarette smoke
+she said she saw a fella with a mullet and a lie
+and now she's gone and i'm left to wonder why
+
+the city's got a story it's not telling me
+the rain's got a secret and it's laughing at me
+i'm a detective in a city that don't care
+where the only clue is the one that's got a few stars","meta-llama-3-8b-instruct","1.0","detective","narrative poem","beat","2024-09-27 13:04:30"
+"Oh Gadabout the Fanciful Fool
+Wore pants with polka dots anew
+He tripped on his feet
+And his hat fell to the street
+And everyone laughed at him too","meta-llama-3-8b-instruct","0.7","comedy","clerihew","avant-garde","2024-09-27 13:04:31"
+"In twilight's hush where shadows creep
+I find myself confronting my dark sleep
+A maelstrom of desires and doubts that swirl
+A cacophony of voices that forever unfurl
+
+The city's din and chaos all but fade
+As I confront the ghosts that I have made
+Of past mistakes and shattered dreams that lie
+In fragments on the ground, like autumn's leaves that dry
+
+The weight of years and all their bitter toll
+ Crushes me beneath its heavy, merciless role
+A burden I can scarce lift or beguile
+As doubts and fears that never fade, and never smile
+
+Yet still I search for solace's fleeting glance
+In fleeting loves and momentary dance
+But like a mirage that vanishes at dawn
+Each promise broken leaves me once forlorn
+
+O darkness that surrounds and threatens me
+O heavy-hearted weight that weighs on me
+How can I find my footing, my uncertain way
+Through this maze of chaos, night and endless gray?","meta-llama-3-8b-instruct","1.0","drama","ode","realist","2024-09-27 13:04:34"
+"Neon dawns on streets of smoke
+Luminous spires pierce the pale
+Ghosts of progress, forgotten
+Sirens wail, a mournful tale
+
+In city's heart, a maze unwinds
+Cathedral of chrome and steel
+Whispers of a distant mind
+Echoes of a forgotten deal
+
+Rust and wire, a verdant hide
+City's pulse, a digital tide
+Flickering tattoos, a litany
+Invisible hands, we ride
+
+In virtual hells, a siren's call
+A dreamer's curse, a digital fall
+Echoes of a distant mind
+Haunting streets, a ghostly find
+
+Futile dreams, a dying light
+Fading glow, a neon night
+City's heart, a hollow core
+A lonely soul, forever more","meta-llama-3-8b-instruct","0.7","cyberpunk","renga","baroque","2024-09-27 13:05:36"
+"Whispers in the night
+Secrets shared beneath the moon
+Echoes of delight
+
+Forgotten footsteps fade
+Shadows dance, a phantom's aid
+Mystery is made
+
+Silence claims the day
+Seals the truth, gone astray
+Left to drift away","meta-llama-3-8b-instruct","0.8","mysterious","dodoitsu","epistolary","2024-09-27 13:05:37"
+"In twilight's hollow, where shadows play
+Among the ruins of forgotten day
+The moon a ghostly galleon grey
+
+The wind a mourner whispers low
+Among the tombs of love's sweet woe
+In twilight's hollow, where shadows play
+
+The stars above, a distant shore
+Where tears of splendor fell before
+The wind a mourner whispers low","meta-llama-3-8b-instruct","1.0","sad","terza rima","absurdist","2024-09-27 13:05:38"
+"cinders of a city once alive
+echoes of a life we used to live
+the wind whispers secrets of the past
+as I stand amidst the ruins vast
+the sky above a dull gray haze
+and I am lost in endless days
+
+of darkness and despair I wander
+searching for a glimmer of hope's light
+but all I find are empty spaces
+where once the laughter of children played
+and now the only sound is the rain
+that falls upon my weary brain
+
+in streets that once were full of life
+I walk alone and feel the strife
+the weight of all that's been undone
+the world a desolate and barren one
+where love and joy have lost their place
+and only pain and loss remain in space
+
+the cinders of a city once alive
+rekindle memories of love and strife
+and I am drawn to the embers' glow
+that flicker still with life to show
+the spark that once burned bright and true
+now a dying flame that's all I know
+
+of darkness and despair I wander
+lost in endless days of gray haze
+searching for a glimmer of hope's light
+a beacon to guide me through the night
+and lead me back to love's warm place
+where hearts can heal and love can re-claim its space
+
+of love and joy that once were here
+I hold the memories, and wipe away my tear
+for in this desolate and barren land
+I'll hold on to love's last stand
+and keep the flame of hope alive
+that one day love and joy will thrive again","meta-llama-3-8b-instruct","0.7","dystopian","sestina","free verse","2024-09-27 13:05:43"
+"Neon tarantula's dance
+Shadows spawn on city walls
+Synthetic dreams unfold
+Ghostly whispers through the air
+Rainstorm's roar, silence falls","meta-llama-3-8b-instruct","1.0","cyberpunk","cinquain","lyrical","2024-09-27 13:05:43"
