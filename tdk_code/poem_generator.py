@@ -112,7 +112,7 @@ def generate_custom_poems(chosenmodel, num_poems, api_call):
             generate_poem_and_log(chosenmodel, api_call)
         # Wait before generating the next batch
         print(f"Waiting 60 sec to respect the API rate limit...")
-        # time.sleep(60)  # Respecting the rate limit
+        time.sleep(60)  # Respecting the rate limit
 
     # Generate the remaining poems (if any)
     if remaining_poems > 0:
@@ -124,4 +124,4 @@ def generate_custom_poems(chosenmodel, num_poems, api_call):
 
 if __name__ == "__main__":
     # Example usage:
-    generate_custom_poems("meta-llama-3.1-405b-instruct", 80, meta_api_call)  # Customize the number of poems you want to generate
+    generate_custom_poems("meta-llama-3-8b-instruct", 80, openai_api_call)  # Customize the number of poems you want to generate
