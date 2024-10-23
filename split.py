@@ -2,7 +2,7 @@ import json
 import random
 
 # Read the dataset
-with open('joint_poem_dataset.jsonl', 'r') as file:
+with open('cleaned_poem_dataset.jsonl', 'r') as file:
     poems = [json.loads(line) for line in file]
 
 # Rename the keys
