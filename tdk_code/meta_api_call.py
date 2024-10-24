@@ -16,7 +16,7 @@ client = ChatCompletionsClient(
     credential=AzureKeyCredential(token),
 )
 
-def meta_api_call(model, temperature, userprompt, systemprompt):
+def meta_api_call(model, temperature, userprompt, systemprompt) -> str:
     response = client.complete(
     messages=[
         SystemMessage(content=systemprompt),
@@ -28,6 +28,6 @@ def meta_api_call(model, temperature, userprompt, systemprompt):
     model=model
 )
 
-    return response
+    return response.choices[0].message.content
 
 #print(response.choices[0].message.content)
