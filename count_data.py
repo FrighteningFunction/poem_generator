@@ -1,4 +1,5 @@
 import csv
+import sys
 
 def count_records(filename):
     with open(filename, mode='r', newline='', encoding='utf-8') as file:
@@ -6,6 +7,10 @@ def count_records(filename):
         count = sum(1 for row in reader)
     return count
 
-# Example usage
-filename = 'generated_poems2.csv'
-print(f'Total records in {filename}: {count_records(filename)}')
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python count_data.py <filename>")
+        sys.exit(1)
+    
+    filename = sys.argv[1]
+    print(f'Total records in {filename}: {count_records(filename)}')
