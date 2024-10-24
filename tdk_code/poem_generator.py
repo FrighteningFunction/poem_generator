@@ -72,7 +72,7 @@ styles = [
 ]
 
 # CSV log file
-csv_file = "generated_poems.csv"
+csv_file = "generated_poems2.csv"
 
 def try_api_call(api_call, model, temperature, prompt, systemprompt):
     while True:
@@ -100,7 +100,7 @@ def generate_poem_and_log(model, api_call):
 
     systemprompt = "You are a creative poet. You don't use any Markdown formatting, including asterisks, underscores, or any symbols related to formatting. You respond only with the poem, no extra instructions or commentary."
 
-    response = api_call(model, temperature, prompt, systemprompt)
+    response = try_api_call(model, temperature, prompt, systemprompt)
 
     poem_text = response.choices[0].message.content
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -158,4 +158,4 @@ def generate_evenly_distributed_poems(num_poems):
             generate_poem_and_log(model, meta_api_call)
 
 if __name__ == "__main__":
-    generate_evenly_distributed_poems(60)  # Customize the number of poems you want to generate
+    generate_evenly_distributed_poems(500)  # Customize the number of poems you want to generate
