@@ -7,11 +7,16 @@ from tdk_code.meta_api_call import meta_api_call
 from datetime import datetime
 import random
 
-# List of models and parameters
-# models = ["gpt-4o-mini", "gpt-4o"]
+# List of models
+models = [
+    "meta-llama-3-8b-instruct", "meta-llama-3.1-405b-instruct",
+    "Phi-3-small-128k-instruct", "Phi-3.5-mini-instruct",
+    "gpt-4o-mini", "gpt-4o"
+]
+
 temperatures = [0.7, 0.8, 1.0]  # Vary temperature for creativity
-daily_limit = 150  # Limit the number of poems generated per day
-requests_per_minute = 15  # Limit the number of requests per minute
+daily_limit = 150
+requests_per_minute = 15
 
 # Lists for genres, styles, and formats
 genres = [
@@ -95,8 +100,8 @@ def generate_poem_and_log(model, api_call):
 
 
 # Function to generate a customizable amount of poems with rate-limiting
+# example: generate_custom_poems("gpt-4o-mini", 80, openai_api_call)
 def generate_custom_poems(chosenmodel, num_poems, api_call):
-    # Make sure the number of poems doesn't exceed the daily limit
     if num_poems > daily_limit:
         print(f"Exceeds daily limit of {daily_limit}. Generating only {daily_limit} poems.")
         num_poems = daily_limit
@@ -110,18 +115,33 @@ def generate_custom_poems(chosenmodel, num_poems, api_call):
         for _ in range(requests_per_minute):
            
             generate_poem_and_log(chosenmodel, api_call)
-        # Wait before generating the next batch
         print(f"Waiting 60 sec to respect the API rate limit...")
-        time.sleep(55)  # Respecting the rate limit
+        time.sleep(60) 
 
-    # Generate the remaining poems (if any)
     if remaining_poems > 0:
         for _ in range(remaining_poems):
             generate_poem_and_log(chosenmodel, api_call)
 
     print(f"Successfully generated {num_poems} poems.")
 
+def generate_evenly_distributed_poems(num_poems):
+    num_models = len(models)
+    poems_per_model = num_poems // num_models
+    remaining_poems = num_poems % num_models
+
+    for model in models:
+        for _ in range(poems_per_model):
+            if "gpt" in model:
+                generate_poem_and_log(model, openai_api_call)
+            else:
+                generate_poem_and_log(model, meta_api_call)
+
+    for i in range(remaining_poems):
+        model = models[i]
+        if "gpt" in model:
+            generate_poem_and_log(model, openai_api_call)
+        else:
+            generate_poem_and_log(model, meta_api_call)
 
 if __name__ == "__main__":
-    # Example usage:
-    generate_custom_poems("gpt-4o-mini", 80, openai_api_call)  # Customize the number of poems you want to generate
+    generate_evenly_distributed_poems(5)  # Customize the number of poems you want to generate
