@@ -9,7 +9,7 @@ endpoint = "https://models.inference.ai.azure.com"
 
 client = OpenAI(base_url=endpoint, api_key=token)
 
-def openai_api_call(model, temperature, userprompt, systemprompt):
+def openai_api_call(model, temperature, userprompt, systemprompt) -> str:
     response = client.chat.completions.create(
         messages=[
             {
@@ -27,4 +27,4 @@ def openai_api_call(model, temperature, userprompt, systemprompt):
         model=model
     )
 
-    return response
+    return response.choices[0].message.content
