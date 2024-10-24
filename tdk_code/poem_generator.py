@@ -72,19 +72,19 @@ styles = [
 ]
 
 # CSV log file
-csv_file = "generated_poems2.csv"
+csv_file = "generated_poems.csv"
 
-def try_api_call(api_call, model, temperature, prompt, systemprompt):
+def try_api_call(api_call, model, temperature, prompt, systemprompt) -> str:
     while True:
         try:
-            api_call(model, temperature, prompt, systemprompt)
-            break
+            return api_call(model, temperature, prompt, systemprompt)
         except HttpResponseError as e:
-            if e.status_code == 429:  # Rate limit error
-                print(f"Rate limit reached. Waiting for {e.retry_after} seconds.")
-                time.sleep(e.retry_after)
-            else:
-                raise e
+                retry_after = int(e.message.split("Please wait ")[1].split(" ")[0])
+                if retry_after < 100:
+                    print(f"Rate limit reached. Waiting for {retry_after} seconds.")
+                    time.sleep(retry_after)
+                else:
+                    raise e
 
 
 # Original synchronous function to generate a poem and log it to CSV
@@ -100,9 +100,9 @@ def generate_poem_and_log(model, api_call):
 
     systemprompt = "You are a creative poet. You don't use any Markdown formatting, including asterisks, underscores, or any symbols related to formatting. You respond only with the poem, no extra instructions or commentary."
 
-    response = try_api_call(model, temperature, prompt, systemprompt)
+    response = try_api_call(api_call, model, temperature, prompt, systemprompt)
 
-    poem_text = response.choices[0].message.content
+    poem_text = response
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     # Log the poem to CSV with proper quoting
@@ -145,17 +145,25 @@ def generate_evenly_distributed_poems(num_poems):
 
     for model in models:
         for _ in range(poems_per_model):
+            try:
+                if "gpt" in model:
+                    generate_poem_and_log(model, openai_api_call)
+                else:
+                    generate_poem_and_log(model, meta_api_call)
+            except HttpResponseError as e:
+                print(f"Error with model {model}: {e.message}")
+                break
+
+    for i in range(remaining_poems):
+        model = models[i]
+        try:
             if "gpt" in model:
                 generate_poem_and_log(model, openai_api_call)
             else:
                 generate_poem_and_log(model, meta_api_call)
-
-    for i in range(remaining_poems):
-        model = models[i]
-        if "gpt" in model:
-            generate_poem_and_log(model, openai_api_call)
-        else:
-            generate_poem_and_log(model, meta_api_call)
+        except HttpResponseError as e:
+            print(f"Error with model {model}: {e.message}")
+            continue
 
 if __name__ == "__main__":
-    generate_evenly_distributed_poems(500)  # Customize the number of poems you want to generate
+    generate_evenly_distributed_poems(300)  # Customize the number of poems you want to generate
