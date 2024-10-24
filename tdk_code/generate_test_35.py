@@ -1,5 +1,5 @@
 import argparse
-from tdk_code.poem_generator import generate_poem_and_log
+from tdk_code.poem_generatorv1 import generate_poem_and_log
 from tdk_code.openai_pure_call import openai_pure_call
 
 def generate_poems(count: int):

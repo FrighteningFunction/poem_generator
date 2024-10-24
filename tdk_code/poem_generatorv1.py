@@ -1,3 +1,7 @@
+# A script to generate poems of various models from template api calls.
+# The script varies theme (genre), style, format, and temperature for creativity randomly.
+# The script logs the generated poems to a CSV file keeping track of the model, temperature, genre, format, and style and timestamp.
+
 import csv
 import time
 from azure.core.exceptions import HttpResponseError
