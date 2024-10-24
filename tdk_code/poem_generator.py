@@ -1,5 +1,6 @@
 import csv
 import time
+from azure.core.exceptions import HttpResponseError
 
 from tdk_code.openai_api_call import openai_api_call
 from tdk_code.meta_api_call import meta_api_call
@@ -73,6 +74,19 @@ styles = [
 # CSV log file
 csv_file = "generated_poems.csv"
 
+def try_api_call(api_call, model, temperature, prompt, systemprompt):
+    while True:
+        try:
+            api_call(model, temperature, prompt, systemprompt)
+            break
+        except HttpResponseError as e:
+            if e.status_code == 429:  # Rate limit error
+                print(f"Rate limit reached. Waiting for {e.retry_after} seconds.")
+                time.sleep(e.retry_after)
+            else:
+                raise e
+
+
 # Original synchronous function to generate a poem and log it to CSV
 def generate_poem_and_log(model, api_call):
     # Randomly select genre, format, style and temperature
@@ -144,4 +158,4 @@ def generate_evenly_distributed_poems(num_poems):
             generate_poem_and_log(model, meta_api_call)
 
 if __name__ == "__main__":
-    generate_evenly_distributed_poems(5)  # Customize the number of poems you want to generate
+    generate_evenly_distributed_poems(60)  # Customize the number of poems you want to generate
