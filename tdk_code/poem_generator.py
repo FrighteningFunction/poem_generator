@@ -158,4 +158,4 @@ def generate_evenly_distributed_poems(num_poems):
             generate_poem_and_log(model, meta_api_call)
 
 if __name__ == "__main__":
-    generate_evenly_distributed_poems(60)  # Customize the number of poems you want to generate
+    generate_evenly_distributed_poems(400)  # Customize the number of poems you want to generate
