@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the dataset
-dataset = pd.read_csv('generated_poems.csv')
+dataset = pd.read_csv('database_packs/training_v1/generated_poems_OLD.csv')
 
 # Count the number of poems for each model type
 model_counts = dataset['model'].value_counts()
@@ -26,6 +26,6 @@ explode = [0.1 if i == model_counts.idxmax() else 0 for i in labels]  # explode 
 plt.figure(figsize=(10, 7))
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%',
         shadow=True, startangle=140)
-plt.title('A versek eloszlása az LLM modellek szerint')
+plt.title('Distribution of LLM-s in dataset', fontsize=20)
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.show()
