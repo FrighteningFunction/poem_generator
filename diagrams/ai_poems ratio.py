@@ -25,7 +25,8 @@ explode = [0.1 if i == model_counts.idxmax() else 0 for i in labels]  # explode 
 # Plotting the pie chart
 plt.figure(figsize=(10, 7))
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%',
-        shadow=True, startangle=140)
-plt.title('Distribution of LLM-s in dataset', fontsize=20)
+        shadow=True, startangle=140, textprops={'fontsize': 18})
+# plt.title('Distribution of LLM-s in dataset', fontsize=20)
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.tight_layout()
 plt.show()
